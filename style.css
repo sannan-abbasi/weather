@@ -1,0 +1,441 @@
+    /* body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mybutton {
+    align: center;
+    padding: 5px 25px;
+    font-size: 5em;
+}
+
+#mylable {
+    font-size: 19em;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+    /* body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 228, 196, 0.363);
+    }
+    
+    h1 {
+        color: rgba(0, 183, 255, 0.767);
+    }
+    
+    form {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.432)
+    }
+    
+    #mynumber {
+        text-align: center;
+        width: 50%;
+        font-size: 2em;
+        border: 2px solid black;
+        border-radius: 4px;
+        margin-bottom: 15%;
+    }
+    
+    button {
+        margin-top: 15px;
+        background-color: rgb(7, 165, 157);
+        color: antiquewhite;
+        font-size: 1.5em;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(2, 75, 71);
+    }
+    
+    lable {
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    #result {
+        font-size: 1.75em;
+        font-weight: bold;
+    } */
+    /* #container {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    button {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+        background-color: rgb(2, 138, 138);
+        border-radius: 10px;
+        border: none;
+        color: antiquewhite;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(2, 48, 48);
+    }
+    
+    button:active {
+        background-color: rgb(1, 27, 27);
+    }
+    
+    /* input { */
+    /* form {
+        text-align: center;
+        background-color: rgba(28, 32, 32, 0.062);
+        width: 50%;
+        margin: auto;
+        border-radius: 15px 10px black;
+        box-shadow: 22px 17px 12px rgb(107, 100, 100);
+        padding: 1.5em;
+    }
+    
+    #h1 {
+        text-shadow: 22px 17px 12px rgb(59, 50, 50);
+        font-size: 3rem;
+    }
+    
+    .foods {
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    #mybutton {
+        font-size: 2em;
+        background-color: rgb(25, 85, 85);
+        border-radius: 10px;
+        box-shadow: 12px 9px 7px;
+        cursor: pointer;
+    }
+    
+    #mybutton:hover {
+        background-color: rgb(1, 31, 21);
+    } */
+    /* body {
+        margin: 0;
+        background-image: url(city.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #clock-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #clock {
+        font-family: monospace;
+        font-size: 7rem;
+        font-weight: bold;
+        text-align: center;
+        color: antiquewhite;
+        backdrop-filter: blur(7px);
+        width: 100%;
+        background-color: rgba(255, 241, 241, 0.295);
+    } */
+    /* body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(72, 145, 129, 0.781);
+    }
+    
+    #myh1 {
+        font-size: 4rem;
+        color: antiquewhite;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        border: 5px solid;
+        border-radius: 50px;
+        background-color: antiquewhite;
+    }
+    
+    #display {
+        font-size: 5rem;
+        font-family: monospace;
+        font-weight: bold;
+        color: rgb(15, 34, 31);
+        text-shadow: 2px 2px 2px rgba(72, 145, 129, 0.781);
+        margin-bottom: 25px;
+    }
+    
+    #controls button {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        min-width: 125px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: antiquewhite;
+    }
+    
+    #startbtn {
+        background-color: rgba(54, 235, 54, 0.829);
+    }
+    
+    #startbtn:hover {
+        background-color: rgba(94, 216, 94, 0.829);
+    }
+    
+    #stopbtn {
+        background-color: rgba(252, 12, 12, 0.836);
+    }
+    
+    #stopbtn:hover {
+        background-color: rgba(190, 40, 40, 0.637);
+    }
+    
+    #resetbtn {
+        background-color: rgba(250, 105, 8, 0.836);
+    }
+    
+    #resetbtn:hover {
+        background-color: rgba(243, 145, 52, 0.836);
+    } */
+    /* body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 25px;
+    }
+    
+    button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: none;
+        background-color: rgba(22, 21, 21, 0.918);
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #calculator {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgba(39, 37, 37, 0.705);
+        border-radius: 50px;
+        max-width: 500px;
+        overflow: hidden;
+    }
+    
+    #display {
+        width: 100%;
+        padding: 20px;
+        font-size: 5rem;
+        text-align: left;
+        border: none;
+        background-color: rgba(14, 13, 13, 0.733);
+        color: antiquewhite;
+    }
+    
+    button:hover {
+        background-color: rgba(14, 13, 8, 0.404);
+    }
+    
+    .operater-btn {
+        background-color: orange;
+    }
+    
+    .operater-btn:hover {
+        background-color: rgba(255, 166, 0, 0.678);
+    } */
+    /* #mybox {
+        background-color: lightgreen;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        font-size: 4.5rem;
+        align-items: center;
+        position: absolute;
+    } */
+    /* body {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        color: black;
+    }
+    
+    .choice {
+        margin-bottom: 30px;
+    }
+    
+    .choices button {
+        font-size: 7.5rem;
+        min-width: 160px;
+        margin: 0 10px;
+        border-radius: 250px;
+        background-color: rgb(7, 71, 80);
+        cursor: pointer;
+        transition: background-color o.5s ease;
+    }
+    
+    .choices button:hover {
+        background-color: rgb(7, 71, 60);
+    }
+    
+    #playerdisplay,
+    #computerdisplay {
+        font-size: 2.5rem;
+    }
+    
+    #resultdisplay {
+        font-size: 5rem;
+        margin: 30px 0;
+    }
+    
+    #playerscoredisplay {
+        font-size: 4rem;
+    }
+    
+    #computerscoredisplay {
+        font-size: 4rem;
+    }
+    
+    #reset {
+        font-size: 2rem;
+        width: fit-content;
+        margin: auto;
+        align-items: center;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: antiquewhite;
+    }
+    
+    #reset:hover {
+        background-color: rgba(240, 248, 255, 0.658);
+    } */
+    
+    body {
+        font-family: arial, sans-serif;
+        background-color: rgba(250, 235, 215, 0.596);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .weatherform {
+        margin: 20px;
+    }
+    
+    .cityinput {
+        padding: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 2px solid rgba(14, 13, 13, 0.897);
+        border-radius: 10px;
+        width: 300px;
+        margin: 10px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: rgb(184, 48, 184);
+        border-radius: 20px;
+        box-shadow: 5px 10px rgb(158, 119, 158);
+        color: white;
+        border: none;
+        cursor: pointer
+    }
+    
+    button[type="submit"]:hover {
+        background-color: rgb(90, 25, 90);
+    }
+    
+    .card {
+        background: linear-gradient(rgba(44, 195, 233, 0.863), rgba(245, 174, 42, 0.61));
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.753);
+        display: flex;
+        flex-direction: column;
+        margin: .5em;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+    
+    .citydisplay,
+    .tempdisplay {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: hsla(0, 0%, 3%, 0.884);
+        margin-bottom: 25px;
+    }
+    
+    .humiditydisplay {
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    .discdisplay {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .weatheremojy {
+        font-size: 7.5rem;
+        margin: 0;
+    }
+    
+    .errordisplay {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
