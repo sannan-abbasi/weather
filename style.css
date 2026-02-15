@@ -347,10 +347,9 @@
     #reset:hover {
         background-color: rgba(240, 248, 255, 0.658);
     } */
-    
-    body {
+    /* body {
         font-family: arial, sans-serif;
-        background-color: rgba(250, 235, 215, 0.596);
+        background-color: rgba(250, 235, 215, 0.597);
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -438,4 +437,4 @@
     .errordisplay {
         font-size: 2.5rem;
         font-weight: bold;
-    }
+    } */
