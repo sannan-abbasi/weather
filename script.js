@@ -376,112 +376,112 @@
 //     computerscoredisplay.textContent = `Computer Score=${computerscore}`;
 //     resultdisplay.textContent = result;
 // }
-// const weatherform = document.querySelector(".weatherform");
-// const cityinput = document.querySelector(".cityinput");
-// const card = document.querySelector(".card");
-// const apikey = "03d7afa97957a085d95db2e1cb8c8870";
-// weatherform.addEventListener("submit", async event => {
-//     event.preventDefault();
-//     const city = cityinput.value;
-//     if (city) {
-//         try {
-//             const weatherdata = await getweatherdata(city);
-//             displayweatherinfo(weatherdata);
+const weatherform = document.querySelector(".weatherform");
+const cityinput = document.querySelector(".cityinput");
+const card = document.querySelector(".card");
+const apikey = "03d7afa97957a085d95db2e1cb8c8870";
+weatherform.addEventListener("submit", async event => {
+    event.preventDefault();
+    const city = cityinput.value;
+    if (city) {
+        try {
+            const weatherdata = await getweatherdata(city);
+            displayweatherinfo(weatherdata);
 
-//         } catch (error) {
-//             console.error(error);
-//             displayerror(error);
-//         }
-//     } else {
-//         displayerror("Please Enter A City");
+        } catch (error) {
+            console.error(error);
+            displayerror(error);
+        }
+    } else {
+        displayerror("Please Enter A City");
 
-//     }
+    }
 
-// })
-// async function getweatherdata(city) {
-//     const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
-//     const response = await fetch(apiurl);
-//     if (!response.ok) {
-//         throw new Error("couldn't fetch weather data");
+})
+async function getweatherdata(city) {
+    const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+    const response = await fetch(apiurl);
+    if (!response.ok) {
+        throw new Error("couldn't fetch weather data");
 
-//     }
-//     return await response.json();
-// }
+    }
+    return await response.json();
+}
 
-// function displayweatherinfo(data) {
-//     const {
-//         name: city,
-//         main: { temp, humidity, feels_like, temp_max, temp_min },
-//         weather: [{ description, id }],
-//         wind: { speed }
-//     } = data;
-//     console.log(data);
-//     card.textContent = "";
-//     card.style.display = "flex";
-//     const citydisplay = document.createElement("h1");
-//     const tempdisplay = document.createElement("p");
-//     const feelsdisplay = document.createElement("p");
-//     const mindisplay = document.createElement("p");
-//     const humiditydisplay = document.createElement("p");
-//     const winddisplay = document.createElement("p")
-//     const discdisplay = document.createElement("p");
-//     const weatheremojy = document.createElement("p");
+function displayweatherinfo(data) {
+    const {
+        name: city,
+        main: { temp, humidity, feels_like, temp_max, temp_min },
+        weather: [{ description, id }],
+        wind: { speed }
+    } = data;
+    console.log(data);
+    card.textContent = "";
+    card.style.display = "flex";
+    const citydisplay = document.createElement("h1");
+    const tempdisplay = document.createElement("p");
+    const feelsdisplay = document.createElement("p");
+    const mindisplay = document.createElement("p");
+    const humiditydisplay = document.createElement("p");
+    const winddisplay = document.createElement("p")
+    const discdisplay = document.createElement("p");
+    const weatheremojy = document.createElement("p");
 
-//     citydisplay.textContent = city;
-//     tempdisplay.textContent = `${(temp-273.15).toFixed(1)}°C`;
-//     feelsdisplay.textContent = `Feels Like:${(feels_like-273.15).toFixed(1)}°C`;
-//     humiditydisplay.textContent = `Humidity ${humidity}%`;
-//     winddisplay.textContent = `Wind:${speed}km/h`;
-//     discdisplay.textContent = description;
-//     weatheremojy.textContent = getweatheremojy(id);
+    citydisplay.textContent = city;
+    tempdisplay.textContent = `${(temp-273.15).toFixed(1)}°C`;
+    feelsdisplay.textContent = `Feels Like:${(feels_like-273.15).toFixed(1)}°C`;
+    humiditydisplay.textContent = `Humidity ${humidity}%`;
+    winddisplay.textContent = `Wind:${speed}km/h`;
+    discdisplay.textContent = description;
+    weatheremojy.textContent = getweatheremojy(id);
 
-//     citydisplay.classList.add("citydisplay");
-//     tempdisplay.classList.add("tempdisplay");
-//     feelsdisplay.classList.add("feelsdisplay");
-//     humiditydisplay.classList.add("humiditydisplay");
-//     winddisplay.classList.add("winddisplay")
-//     discdisplay.classList.add("discdisplay");
-//     weatheremojy.classList.add("weatheremojy");
-//     console.log(tempdisplay)
-//     card.appendChild(citydisplay);
-//     card.appendChild(tempdisplay);
-//     card.appendChild(feelsdisplay);
+    citydisplay.classList.add("citydisplay");
+    tempdisplay.classList.add("tempdisplay");
+    feelsdisplay.classList.add("feelsdisplay");
+    humiditydisplay.classList.add("humiditydisplay");
+    winddisplay.classList.add("winddisplay")
+    discdisplay.classList.add("discdisplay");
+    weatheremojy.classList.add("weatheremojy");
+    console.log(tempdisplay)
+    card.appendChild(citydisplay);
+    card.appendChild(tempdisplay);
+    card.appendChild(feelsdisplay);
 
-//     card.appendChild(humiditydisplay);
-//     card.appendChild(winddisplay);
-//     card.appendChild(discdisplay);
-//     card.appendChild(weatheremojy);
+    card.appendChild(humiditydisplay);
+    card.appendChild(winddisplay);
+    card.appendChild(discdisplay);
+    card.appendChild(weatheremojy);
 
-// }
+}
 
-// function getweatheremojy(weatherId) {
-//     switch (true) {
-//         case (weatherId >= 200 && weatherId < 300):
-//             return "⛈️";
-//         case (weatherId >= 300 && weatherId < 400):
-//             return "🌧️🌧️🌧️";
-//         case (weatherId >= 500 && weatherId < 600):
-//             return "🌧️";
-//         case (weatherId >= 600 && weatherId < 700):
-//             return "❄️";
-//         case (weatherId >= 700 && weatherId < 800):
-//             return "🌫️";
-//         case (weatherId === 800):
-//             return "☀️";
-//         case (weatherId >= 801 && weatherId < 810):
-//             return "🌥️";
-//         default:
-//             return "❓";
+function getweatheremojy(weatherId) {
+    switch (true) {
+        case (weatherId >= 200 && weatherId < 300):
+            return "⛈️";
+        case (weatherId >= 300 && weatherId < 400):
+            return "🌧️🌧️🌧️";
+        case (weatherId >= 500 && weatherId < 600):
+            return "🌧️";
+        case (weatherId >= 600 && weatherId < 700):
+            return "❄️";
+        case (weatherId >= 700 && weatherId < 800):
+            return "🌫️";
+        case (weatherId === 800):
+            return "☀️";
+        case (weatherId >= 801 && weatherId < 810):
+            return "🌥️";
+        default:
+            return "❓";
 
-//     }
-// }
+    }
+}
 
-// function displayerror(message) {
-//     const errordisplay = document.createElement("p");
-//     errordisplay.textContent = message;
-//     errordisplay.classList.add("errordisplay");
-//     card.textContent = "";
-//     card.style.display = "flex";
-//     card.appendChild(errordisplay);
+function displayerror(message) {
+    const errordisplay = document.createElement("p");
+    errordisplay.textContent = message;
+    errordisplay.classList.add("errordisplay");
+    card.textContent = "";
+    card.style.display = "flex";
+    card.appendChild(errordisplay);
 
-// }
+}
